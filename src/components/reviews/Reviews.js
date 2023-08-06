@@ -15,10 +15,10 @@ const Reviews = () => {
   }, []);
   const fetchMovieData = async (movieId) => {
     try {
-      const img=await fetch(`http://localhost:5000/movies/${movieId}`)
+      const img=await fetch(`https://movies-api-lovat.vercel.app/movies/${movieId}`)
       const imjs=await img.json()
       setUrl(imjs.posterUrl);
-      const response = await fetch(`http://localhost:5000/reviews/${movieId}`);
+      const response = await fetch(`https://movies-api-lovat.vercel.app/reviews/${movieId}`);
       const json = await response.json();
       setMovie(json);
       const reviewBodies = json.map((review) => (review.revtext));
@@ -47,7 +47,7 @@ const Reviews = () => {
       };
 
       const response = await fetch(
-        "http://localhost:5000/reviews",
+        "https://movies-api-lovat.vercel.app/reviews",
         requestOptions
       );
       
