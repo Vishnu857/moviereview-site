@@ -11,7 +11,7 @@ function App() {
 
   const fetchMovies = async () => {
     try {
-      const response = await fetch("http://localhost:5000/movies");
+      const response = await fetch("https://movies-api-lovat.vercel.app/movies");
       const json = await response.json();
       setMovies(json);
       // console.log(json);
