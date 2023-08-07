@@ -1,5 +1,6 @@
 @media only screen and (max-width: 800px) {
     Container{
+        display: flex;
         flex-direction: column;
         align-items: center;
         top:20px;
