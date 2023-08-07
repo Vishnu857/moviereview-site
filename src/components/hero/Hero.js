@@ -39,10 +39,7 @@ const Hero = ({ movies }) => {
                         )}`}
                       >
                         <div className="play-button-icon-container">
-                          <FontAwesomeIcon
-                            className="play-button-icon"
-                            icon={faCirclePlay}
-                          />
+                          <div className="play-button-icon">play Trailer</div>
                         </div>
                       </Link>
 
