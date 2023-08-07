@@ -3,6 +3,7 @@ import { useParams } from "react-router-dom";
 import { Container, Row, Col } from "react-bootstrap";
 import ReviewForm from "../reviewform/ReviewForm";
 import React from "react";
+import "./Reviews.css";
 const Reviews = () => {
   const revText = useRef();
   const params = useParams();
